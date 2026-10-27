@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fsm>
+  <states>
+    <state>
+      <values>L=0</values>
+      <position x="-60.0" y="-240.0"/>
+      <number>0</number>
+      <name>BTN_UP0</name>
+      <radius>70</radius>
+      <isInitial>true</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>L=1</values>
+      <position x="180.0" y="0.0"/>
+      <number>1</number>
+      <name>BTN_DN1</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>L=1</values>
+      <position x="0.0" y="180.0"/>
+      <number>2</number>
+      <name></name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values>L=0</values>
+      <position x="-180.0" y="0.0"/>
+      <number>3</number>
+      <name></name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+  </states>
+  <transitions>
+    <transition>
+      <values></values>
+      <position x="137.16162" y="137.16162"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>I=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-136.2334" y="136.2334"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[4]"/>
+      <condition>I=1</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-177.20633" y="-148.60316"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state"/>
+      <condition>I=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="145.457" y="-205.457"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>I=1</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="68.0" y="-360.0"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state"/>
+      <condition>I=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="407.0" y="55.0"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>I=1</condition>
+    </transition>
+  </transitions>
+</fsm>
