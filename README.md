@@ -9,7 +9,7 @@ tool with an FSM editor.
 
 | File | Example |
 | --- | --- |
-| [`push1.fsm`](push1.fsm) | Push-button input and output states |
+| [`push_button.fsm`](push_button.fsm) | Four-state push-button input and lamp output |
 | [`counter10.fsm`](counter10.fsm) | Enabled, clearable decade counter with an overflow output |
 | [`SevenSegCounter.fsm`](SevenSegCounter.fsm) | Enabled, clearable decade counter with seven-segment output values |
 | [`rotDecoderMoore.fsm`](rotDecoderMoore.fsm) | Rotary encoder decoder with Moore-style outputs |
@@ -23,6 +23,7 @@ tool with an FSM editor.
 | [`Elevator5FloorLatched.fsm`](Elevator5FloorLatched.fsm) | Five-floor elevator with latched requests, travel states and arrival clearing (matches the simulator) |
 | [`elevator_simulator.py`](elevator_simulator.py) | Animated Tkinter demo of the five-floor elevator FSM |
 | [`push_button_simulator.py`](push_button_simulator.py) | Interactive Tkinter demo of the four-state push-button lamp FSM |
+| [`logo.png`](logo.png) | University of Gibraltar logo used by the push-button simulator |
 
 These files are FSM diagrams, not standalone programs. Open a `.fsm` file in
 Hneemann Digital to inspect or edit its states, transition conditions, and
