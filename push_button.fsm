@@ -25,7 +25,7 @@
       <values>L=1</values>
       <position x="0.0" y="180.0"/>
       <number>2</number>
-      <name></name>
+      <name>BTN_UP1</name>
       <radius>70</radius>
       <isInitial>false</isInitial>
       <initialAngle>12</initialAngle>
@@ -35,7 +35,7 @@
       <values>L=0</values>
       <position x="-180.0" y="0.0"/>
       <number>3</number>
-      <name></name>
+      <name>BTN_DN0</name>
       <radius>70</radius>
       <isInitial>false</isInitial>
       <initialAngle>12</initialAngle>
@@ -73,6 +73,13 @@
     </transition>
     <transition>
       <values></values>
+      <position x="150.0" y="350.0"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state[4]"/>
+      <condition>I=1</condition>
+    </transition>
+    <transition>
+      <values></values>
       <position x="68.0" y="-360.0"/>
       <fromState reference="../../../states/state"/>
       <toState reference="../../../states/state"/>
@@ -83,7 +90,14 @@
       <position x="407.0" y="55.0"/>
       <fromState reference="../../../states/state[2]"/>
       <toState reference="../../../states/state[2]"/>
-      <condition>I=1</condition>
+      <condition>I=0</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="-250.0" y="55.0"/>
+      <fromState reference="../../../states/state[3]"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition>I=0</condition>
     </transition>
   </transitions>
 </fsm>

@@ -22,6 +22,7 @@ tool with an FSM editor.
 | [`Elevator5Floor.fsm`](Elevator5Floor.fsm) | Five-floor selector with one active-high button per floor |
 | [`Elevator5FloorLatched.fsm`](Elevator5FloorLatched.fsm) | Five-floor elevator with latched requests, travel states and arrival clearing (matches the simulator) |
 | [`elevator_simulator.py`](elevator_simulator.py) | Animated Tkinter demo of the five-floor elevator FSM |
+| [`push_button_simulator.py`](push_button_simulator.py) | Interactive Tkinter demo of the four-state push-button lamp FSM |
 
 These files are FSM diagrams, not standalone programs. Open a `.fsm` file in
 Hneemann Digital to inspect or edit its states, transition conditions, and
@@ -47,6 +48,20 @@ installers). From this folder run:
 ```
 python elevator_simulator.py
 ```
+
+### Push-button lamp demo
+
+Requires Python 3 with Tkinter. Run from this folder:
+
+```
+python push_button_simulator.py
+```
+
+Press and hold the on-screen switch (or hold Space), then release it. Each
+complete press toggles the lamp. The four state bubbles show whether the
+switch is up or down and the lamp output; the highlighted bubble is the
+current FSM state. Keep [`logo.png`](logo.png) beside the script for the
+University of Gibraltar branding.
 
 1. Click one floor button (B5 is at the top, B1 at the bottom). The car
    travels there and the button switches off on arrival.
